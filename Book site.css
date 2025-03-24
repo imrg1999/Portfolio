@@ -1,0 +1,201 @@
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+.header {
+    background-color: #6a89cc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
+
+.header img {
+    height: 250px; /* Adjust logo height */
+    width: auto;  /* Maintain aspect ratio */
+    object-fit: contain;
+}
+
+/* Heading Styling */
+.header h1 {
+    font-size: 1.8rem;
+    color: white;
+    text-align: left;
+    margin-left: 20px; /* Add space between the logo and heading */
+    flex: 1; /* Allow heading to take up available space */
+}
+
+/* Search Button Styling */
+.header .btn {
+    background-color: #fafbfd;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 16px;
+    color: #6a89cc;
+    margin-left: 20px; /* Space between text and button */
+}
+
+/* Banner Styling */
+.banner {
+    background-color: rgb(47, 9, 109);
+    color: white;
+    display: flex; /* Use flexbox to align content side by side */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Vertically center the content */
+    padding: 20px 10%;
+}
+
+.banner ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+}
+
+.banner ul li {
+    background-color: #6a89cc;
+    padding: 10px 20px;
+    border-radius: 16px;
+}
+
+.banner ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Layout Styling */
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    flex-wrap: wrap; /* Allow content to wrap on small screens */
+}
+
+/* Sidebar Styling */
+.sidebar {
+    flex: 1;
+}
+
+/* Content Styling */
+.content {
+    flex: 4;
+    background-color: rgb(39, 100, 119);
+    padding: 20px;
+}
+
+/* Sidebar List */
+.sidebar > ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.sidebar > ul > li {
+    background-color: #6a89cc;
+    border-radius: 16px;
+}
+
+.sidebar > ul > li > a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Product Grid */
+.content > .product {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Product Cards Styling */
+.product > .product-card {
+    flex: 1;
+    min-width: 20%;
+    max-width: 23%; /* Limit max width for better responsiveness */
+    height: auto;
+    border: 1px solid #6a89cc;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.product > .product-card img {
+    width: 100%;
+    border-radius: 20px 20px 0 0; /* Optional: Rounded top corners */
+}
+
+/* Button Styling in Product Cards */
+.product > .product-card > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product > .product-card > div .btn {
+    padding: 10px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack header items on smaller screens */
+        padding: 10px 5%;
+    }
+
+    .main {
+        flex-direction: column; /* Stack sidebar and content vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .sidebar {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    .product > .product-card {
+        min-width: 100%; /* Stack products on small screens */
+        max-width: 100%;
+    }
+
+    .sidebar > ul {
+        padding: 10px;
+    }
+
+    .banner {
+        flex-direction: column; /* Stack banner content vertically on small screens */
+        padding: 10px 5%;
+        text-align: center;
+    }
+
+    .banner ul {
+        flex-direction: column; /* Stack the list items vertically on small screens */
+        gap: 10px;
+    }
+}
+.end{
+    background-color: #6a89cc;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+}
