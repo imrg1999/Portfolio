@@ -1,0 +1,36 @@
+body{
+    padding: 25px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .title {
+      color: #5C6AC4;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Vertical centering */
+    align-items: center;      /* Horizontal centering */
+    height: 100vh;            /* Full viewport height */
+    text-align: center;
+  }
+  button {
+    color: blue;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #loader {
+    margin: 10px;
+    font-style: italic;
+    color: #888;
+  }
+  
+  #setup, #punchline {
+    font-size: 18px;
+    margin-top: 20px;
+  }
