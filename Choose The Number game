@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number Game</title>
+    <link rel="stylesheet" href="chooseTheNumber.css">
+</head>
+<body>
+    <h1>Guess The Number Game</h1>
+    <p id="display"></p>
+    <script src="chooseTheNumber.js"></script>
+</body>
+</html>
+
+* {
+    background-color: rgb(14, 67, 154);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+let d = document.getElementById("display");
+
+let winNum = 26;
+let userNum = Number(prompt("Enter a number"));
+
+while (userNum != winNum) {
+    userNum = Number(prompt("Try again! Enter another number"));
+    if(userNum == winNum) {
+        d.textContent = "You win!";
+        break;
+    }
+}
