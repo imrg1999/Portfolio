@@ -1,0 +1,38 @@
+body{
+  padding: 25px;
+}
+.title {
+	color: #5C6AC4;
+}
+#div1 {
+  
+  height: 50px;
+  width: 800px;
+  background-color: black;
+  
+}
+#logo {
+  color: orange;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  margin-right: 90px;
+}
+#div2 {
+  height: 500px;
+  width: 780px;
+  text-align: center;
+  background-color: gray;
+  padding: 10px;
+}
+#myForm {
+  width: 300px;
+  height: 200px;
+  background-color: rgba(117, 111, 111,0.5);
+  padding: 20px;
+  margin-left: 220px;
+}
+button {
+  color: blue;
+}
